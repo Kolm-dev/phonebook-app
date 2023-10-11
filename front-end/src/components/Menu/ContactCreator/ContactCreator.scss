@@ -1,0 +1,27 @@
+.form.formCreateContact {
+	width: 200px;
+	background-color: #f3eded;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 15px;
+	border: 2px dashed #ccc;
+	padding: 20px 15px 15px;
+	position: relative;
+
+	.btnCRUD {
+		font-size: 18px;
+		top: 10px;
+		right: 10px;
+		color: #fdfffe;
+		background-color: #404c40;
+		border: none;
+		width: auto;
+		height: 35px;
+		&:hover {
+			cursor: pointer;
+			background-color: #1f241f;
+			color: #999a99;
+		}
+	}
+}
