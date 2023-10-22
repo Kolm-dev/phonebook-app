@@ -2,6 +2,8 @@
 
 A simple phonebook application built with React on the front-end and Express.js on the back-end.
 
+Demo: http://195.189.226.101/
+
 ## Navigation
 
 - [Phonebook Full-stack Application](#phonebook-full-stack-application)
