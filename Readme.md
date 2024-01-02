@@ -2,7 +2,7 @@
 
 A simple phonebook application built with React on the front-end and Express.js on the back-end.
 
-Demo: http://195.189.226.101/
+Demo: http://193.169.188.226/
 
 ## Navigation
 
@@ -100,6 +100,44 @@ _Run the server:_
 ```console
 npm run run
 ```
+
+## Production Settings
+
+### Backend
+
+To ensure the proper functioning of the application in production, you need to update the CORS settings on the back-end to allow connections from the front-end.
+
+**Steps**:
+1. Open the configuration file of your back-end server (e.g., `server.js` or `app.js`).
+2. Locate the CORS settings and update them by specifying the domain of your front-end. Example:
+   ```javascript
+   const corsOptions = {
+     origin: 'http://your-frontend-domain.com',
+     optionsSuccessStatus: 200
+   };
+
+   app.use(cors(corsOptions));
+
+
+### Frontend
+You need to update the backend server's URL in your front-end code by replacing all occurrences of localhost with the actual server address.
+
+**Steps**:
+
+1. Open the bundled file of your front-end application (e.g., index654214.js).
+
+2. Use the sed command to replace all occurrences of the local host with your server's address. Example command in cmd-line:
+```sed -i 's/localhost:3000/your-backend-server-address.com/g' /path/to/your/builded_index.js```
+
+
+
+
+#### Important Notes
+Always verify the correctness of the URL and the availability of the server before applying these changes.
+Ensure that the ports required for communication between the front-end and back-end are open and accessible.
+After making the changes, restart the servers and thoroughly test the application to ensure its proper functioning.
+
+
 
 ### Technologies
 
