@@ -92,7 +92,7 @@ In the server directory:
 _For development mode_
 
 ```console
-npm run nodemon
+npm run dev
 ```
 
 _Run the server:_
